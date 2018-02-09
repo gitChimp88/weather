@@ -1,0 +1,45 @@
+#app {
+	text-align: center
+}
+
+.dates p {
+	display: inline-block;
+	
+}
+
+.marker {
+	cursor: pointer;
+	color: #0A4B6B;
+}
+
+.marker:Hover {
+	color: red;
+	
+}
+
+
+
+.liszt:Hover {
+	color: #1a0dab;
+	text-decoration: underline;
+}
+
+.input {
+	width: 100%;
+}
+
+#underline {
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 30px;
+	color: #0A4B6B;
+	font-family: 'Oswald';
+}
+
+
+body {
+	background-color: #74ADC8;
+
+}
+
