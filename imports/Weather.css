@@ -7,6 +7,10 @@
 	
 }
 
+.dates {
+	background-color: #74ADC8;
+}
+
 .marker {
 	cursor: pointer;
 	color: #0A4B6B;
@@ -38,8 +42,49 @@
 }
 
 
-body {
-	background-color: #74ADC8;
 
+
+
+
+
+
+.clear {
+	background: url('https://cdn.suwalls.com/wallpapers/nature/bright-sun-in-the-clear-sky-above-the-mountain-lake-53554-1920x1200.jpg') top left no-repeat;
+	background-size: cover;
+	
 }
 
+.clouds {
+		background: url('/images/cloudImage.jpg') top left no-repeat; 
+	   background-size: cover;
+}
+
+.rain {
+	background: url('/images/rain.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.thunder {
+	background: url('images/storm.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.snow {
+	background: url('images/snowing.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.mist {
+	background: url('images/mist.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.haze {
+	background: url('images/haze.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.overCast {
+	background: url('images/overcast.jpg') top left no-repeat;
+	background-size: cover;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import TopBar from './TopBar'
-import WeatherInfo from './WeatherInfo'
+import WeatherCover from './weatherCover'
 import Modal from './Modal'
 import "./Weather.css"
 
@@ -64,7 +64,7 @@ export default class HelloMeteor extends React.Component {
 			.then((response)=> {
 				
 			  //success case, use your data!
-				//console.log(response.data)
+				console.log(response.data)
 				this.setState({temp: response.data.main.temp,
 							  city: response.data.name,
 							  description: response.data.weather[0].description})
@@ -106,7 +106,7 @@ export default class HelloMeteor extends React.Component {
 							  description: response.data.list[18].weather[0].description,
 							 day: currentDay + 2, month: currentMonth})
 					arr.push({temp: response.data.list[26].main.temp,
-							  description: response.data.list[20].weather[0].description,
+							  description: response.data.list[26].weather[0].description,
 							 day: currentDay + 3, month: currentMonth})
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
@@ -202,16 +202,16 @@ export default class HelloMeteor extends React.Component {
 					
 				}  else if(time < 18 && time >= 15){
 					arr.push({temp: response.data.list[8].main.temp,
-							  description: response.data.list[7].weather[0].description,
+							  description: response.data.list[8].weather[0].description,
 							 day: currentDay + 1, month: currentMonth})
 					arr.push({temp: response.data.list[16].main.temp,
-							  description: response.data.list[15].weather[0].description,
+							  description: response.data.list[16].weather[0].description,
 							 day: currentDay + 2, month: currentMonth})
 					arr.push({temp: response.data.list[24].main.temp,
-							  description: response.data.list[23].weather[0].description,
+							  description: response.data.list[24].weather[0].description,
 							 day: currentDay + 3, month: currentMonth})
 					arr.push({temp: response.data.list[32].main.temp,
-							  description: response.data.list[31].weather[0].description,
+							  description: response.data.list[32].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
 					arr.push({temp: response.data.list[39].main.temp,
 							  description: response.data.list[39].weather[0].description,
@@ -486,7 +486,7 @@ export default class HelloMeteor extends React.Component {
 						<TopBar clicked = {this.clicked.bind(this)} 
 								time = {this.getCurrentTime.bind(this)} />
 						
-						<WeatherInfo temp = {this.state.temp} 
+						<WeatherCover temp = {this.state.temp} 
 									 city = {this.state.city}
 									 description = {this.state.description}
 									 forecast= {this.state.forecast}
@@ -504,7 +504,7 @@ export default class HelloMeteor extends React.Component {
 						<TopBar clicked = {this.clicked.bind(this)} 
 								time = {this.getCurrentTime.bind(this)}/>
 						
-						<WeatherInfo temp = {this.state.temp} 
+						<WeatherCover temp = {this.state.temp} 
 									 city = {this.state.city}
 									 description = {this.state.description}
 									 forecast= {this.state.forecast}

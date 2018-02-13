@@ -52,58 +52,12 @@ export default class WeatherInfo extends React.Component {
 		  
 		 
 		  
-		  /*
-		  
-		  THIS WAS A WAY TO SHOW DAY RATHER THAN DATE, WORKED BUT NOT ON RESIZE
-		  
-		  var Monday = ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-		  var Tuesday = ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-		  var Wednesday = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"]
-		  var Thursday = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday"]
-		  var Friday = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"]
-		  var Saturday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
-		  var Sunday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-		  
-		  if(day == "Monday") {
-			  weekDays = Monday.map((val, i)=>{
-				  return <div className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-		  } else if(day == "Tuesday"){
-			  weekDays = Tuesday.map((val, i)=>{
-				  return <div  className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-					
-				}  else if(day == "Wednesday"){
-					weekDays = Wednesday.map((val, i)=>{
-				  return <div  className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-					
-				}  else if(day == "Thursday"){
-						weekDays = Thursday.map((val, i)=>{
-				  return <div  className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-		    			
-				}  else if(day == "Friday"){
-					weekDays = Friday.map((val, i)=>{
-				  return <div style={inline}><h1>{val}</h1></div>
-			  })
-					
-				}  else if(day == "Saturday"){
-					weekDays = Saturday.map((val, i)=>{
-				  return <div  className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-					
-				}  else if(day == "Sunday"){
-					weekDays = Sunday.map((val, i)=>{
-				  return <div  className="col-md-2" style={inline}><h1>{val}</h1></div>
-			  })
-					
-				} */
+		
 		 
 		
 		
 		    return ( 
-					<div className="container-fluid">
+					<div>
 					   <div style={background}>
 						<h1>{this.props.city}</h1>
 						<h3>{this.props.temp}°C</h3>
