@@ -10,8 +10,7 @@ export default class WeatherCover extends React.Component {
       render(){
 		  
 		
-		 /*This component holds the logic to render the background image depending on weather description*/
-		  /*complete this part later, you can get the images from Pixabay resize to height 800 px and change the styling to suit picture maybe add some opacity to surrounding divs and style the top bar to suit needs*/
+		
 		
 		var desc = this.props.description
 		var cover;

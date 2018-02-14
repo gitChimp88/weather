@@ -47,7 +47,8 @@ export default class WeatherInfo extends React.Component {
 			  margin: "0 auto",
 			  padding: "40px",
 			  fontFamily: 'Oswald, sans-serif',
-			  fontSize: "25px"
+			  fontSize: "25px",
+			
 		  }
 		  
 		 

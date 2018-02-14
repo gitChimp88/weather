@@ -80,6 +80,7 @@ export default class HelloMeteor extends React.Component {
 		}
 	
 		getForecast(lat, lon) {
+			
 			var APIKEY = "&APPID=16909a97489bed275d13dbdea4e01f59";
 			let api = "https://api.openweathermap.org/data/2.5/forecast?" + lat + lon + "&units=metric" + APIKEY;
 			
@@ -111,8 +112,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -130,8 +131,8 @@ export default class HelloMeteor extends React.Component {
 					   arr.push({temp: response.data.list[33].main.temp,
 								 description: response.data.list[33].weather[0].description,
 								day: currentDay + 4, month: currentMonth})
-					   arr.push({temp: response.data.list[39].main.temp,
-								 description: response.data.list[39].weather[0].description,
+					   arr.push({temp: response.data.list[36].main.temp,
+								 description: response.data.list[36].weather[0].description,
 								day: currentDay + 5, month: currentMonth})
 					   this.setState({forecast: arr})
 					   
@@ -148,8 +149,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -166,8 +167,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
 							  day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							  day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -192,11 +193,11 @@ export default class HelloMeteor extends React.Component {
 							 day: currentDay + 4, month: currentMonth,
 							 min: response.data.list[16].main.temp_min,
 							 max: response.data.list[33].main.temp_max})
-					arr.push({temp: response.data.list[39].main.temp,
-							 description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							 description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth,
 							 min: response.data.list[18].main.temp_min,
-							 max: response.data.list[39].main.temp_max})
+							 max: response.data.list[36].main.temp_max})
 					this.setState({forecast: arr})
 					console.log(this.state.forecast)
 					
@@ -213,8 +214,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -231,8 +232,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[30].main.temp,
 							  description: response.data.list[30].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[38].main.temp,
-							  description: response.data.list[38].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 				
@@ -321,8 +322,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
 							  day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -340,8 +341,8 @@ export default class HelloMeteor extends React.Component {
 					   arr.push({temp: response.data.list[33].main.temp,
 								 description: response.data.list[33].weather[0].description,
 								 day: currentDay + 4, month: currentMonth})
-					   arr.push({temp: response.data.list[39].main.temp,
-								 description: response.data.list[39].weather[0].description,
+					   arr.push({temp: response.data.list[36].main.temp,
+								 description: response.data.list[36].weather[0].description,
 								 day: currentDay + 5, month: currentMonth})
 					   this.setState({forecast: arr})
 					   
@@ -358,8 +359,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
 							  day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							  day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -376,8 +377,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							  day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -394,8 +395,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[32].main.temp,
 							 description: response.data.list[32].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							 description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							 description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 				
@@ -413,8 +414,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[31].main.temp,
 							  description: response.data.list[31].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[39].main.temp,
-							  description: response.data.list[39].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 					
@@ -431,8 +432,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[30].main.temp,
 							  description: response.data.list[30].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[38].main.temp,
-							  description: response.data.list[38].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 				
@@ -451,8 +452,8 @@ export default class HelloMeteor extends React.Component {
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
 							 day: currentDay + 4, month: currentMonth})
-					arr.push({temp: response.data.list[32].main.temp,
-							  description: response.data.list[32].weather[0].description,
+					arr.push({temp: response.data.list[36].main.temp,
+							  description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth})
 					this.setState({forecast: arr})
 				}	
