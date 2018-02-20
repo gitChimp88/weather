@@ -25,14 +25,15 @@ export default class WeatherInfo extends React.Component {
 		  
 		  const inline = {
 			display: "inline-block",
-			marginRight: "25px",
-			marginLeft: "25px",
-			marginBottom: "20px",
+			marginRight: "40px",
+			marginLeft: "40px",
+			marginBottom: "40px",
 			backgroundColor: "#165F82",
-		    padding: "15px",
+		    padding: "5px",
 			borderRadius: "10px",
-			color: "#74ADC8",
-			fontFamily: 'Oswald, sans-serif'
+			color: "#BCD9D9",
+			fontFamily: 'Work Sans, sans-serif',
+			  opacity: "0.9"
 			
 		}
 		  const white = {
@@ -41,44 +42,84 @@ export default class WeatherInfo extends React.Component {
 		  
 		  const background = {
 			  backgroundColor: "#165F82",
-			  borderRadius: "10px",
-			  color: "#74ADC8",
-			  width: "90%",
+			  borderRadius: "2px",
+			  color: "#BCD9D9",
+			  width: "100%",
 			  margin: "0 auto",
-			  padding: "40px",
-			  fontFamily: 'Oswald, sans-serif',
-			  fontSize: "25px",
-			
-		  }
+			  padding: "60px",
+			  fontFamily: 'Work Sans, sans-serif',
+			  fontSize: "30px",
+			  opacity: "0.8"
+		}
 		  
+		   const background2 = {
+			  backgroundColor: "#165F82",
+			  borderRadius: "2px",
+			  color: "#BCD9D9",
+			  width: "100%",
+			  margin: "0 auto",
+			  padding: "60px",
+			  fontFamily: 'Work Sans, sans-serif',
+			  fontSize: "30px",
+			  
+		}
 		 
 		  
 		
-		 
+		var clicked = this.props.clicked
 		
-		
+		if(clicked == true){
 		    return ( 
 					<div>
-					   <div style={background}>
-						<h1>{this.props.city}</h1>
+					    <div style={background2}>
+						<h1 id="h1temp">{this.props.city}</h1>
 						<h3>{this.props.temp}°C</h3>
 						<p>{this.props.description}</p>
 						</div>
 						<WeatherIcon description={this.props.description}/>
 						<h1 id="underline">Forecast</h1>
 						
+					<div>
 						
 						
-						<div>
+			
 							
 						{this.props.forecast.map((val, i)=>{
 			 
-			  return <div key={i} style={inline}><h1 style={white}>{val.day}/{val.month}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div>
+			  return <div key={i} style={inline}><div><h1 style={white}>{val.day}/{val.month}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
 		  })}
 						</div>
 						
 					</div>
 					
                 )
-        }
+		} else {
+			
+			 return ( 
+					<div>
+					    <div style={background}>
+						<h1 id="h1temp">{this.props.city}</h1>
+						<h3>{this.props.temp}°C</h3>
+						<p>{this.props.description}</p>
+						</div>
+						<WeatherIcon description={this.props.description}/>
+						<h1 id="underline">Forecast</h1>
+						
+					<div>
+						
+						
+			
+							
+						{this.props.forecast.map((val, i)=>{
+			 
+			  return <div key={i} style={inline}><div><h1 style={white}>{val.day}/{val.month}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
+		  })}
+						</div>
+						
+					</div>
+					
+                )
+			
+		}
+     }
 }

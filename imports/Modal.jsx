@@ -31,7 +31,7 @@ export default class Modal extends React.Component {
 				  backgroundColor: '#74ADC8',
 				  borderRadius: 5,
 				  maxWidth: 500,
-				  minHeight: 100,
+				  minHeight: 200,
 				  margin: '0 auto',
 				  padding: 30,
 				  color: "#0A4B6B"

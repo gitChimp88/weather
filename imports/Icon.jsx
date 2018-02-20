@@ -29,7 +29,7 @@ export default class Icon extends React.Component {
 				image = <img height="100" width="100" src="/images/rain.png"></img>
 			}  else if(description == "thunder storm"){
 				image = <img height="100" width="100" src="/images/thunderStorm.png"></img>
-			}  else if(description == "snow" || description == "light snow"){
+			}  else if(description == "snow" || description == "light snow" || description == "light shower snow"){
 				image = <img height="100" width="100" src="/images/snow.png"></img>
 			}  else if(description == "mist"){
 				image = <img height="100" width="100" src="/images/mist.png"></img>

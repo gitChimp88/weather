@@ -491,7 +491,8 @@ export default class HelloMeteor extends React.Component {
 									 city = {this.state.city}
 									 description = {this.state.description}
 									 forecast= {this.state.forecast}
-									 day = {this.state.day}/>
+									 day = {this.state.day}
+									 clicked = {this.state.clicked}/>
 						
 					</div>
 					)

@@ -24,6 +24,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "scattered clouds" || desc == "broken clouds") {
@@ -34,6 +35,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+							        clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "shower rain" || desc == "moderate rain" || desc == "light rain" || desc == "drizzle rain"){
@@ -44,6 +46,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "thunder storm"){
@@ -54,6 +57,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "snow" || desc == "light snow"){
@@ -64,6 +68,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "mist" || desc == "smoke"){
@@ -74,6 +79,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else if(desc == "haze") {
@@ -85,6 +91,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 			 
@@ -96,6 +103,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 } else {
@@ -106,6 +114,7 @@ export default class WeatherCover extends React.Component {
 									 description = {this.props.description}
 									 forecast= {this.props.forecast}
 									 day = {this.props.day}
+									clicked = {this.props.clicked}
 							/>
 			           </div>
 		 }
