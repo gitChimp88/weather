@@ -11,6 +11,9 @@ export default class Icon extends React.Component {
 		  
 		  /*DISPLAY ICON FOR FORECAST*/
 		  
+		  const pad = {
+			  padding: "10px"
+		  }
 		  var description = this.props.description;
 		  let image;
 		
@@ -31,7 +34,7 @@ export default class Icon extends React.Component {
 				image = <img height="100" width="100" src="/images/thunderStorm.png"></img>
 			}  else if(description == "snow" || description == "light snow" || description == "light shower snow"){
 				image = <img height="100" width="100" src="/images/snow.png"></img>
-			}  else if(description == "mist"){
+			}  else if(description == "mist" || description == "smoke"){
 				image = <img height="100" width="100" src="/images/mist.png"></img>
 			}  else if(description == "overcast clouds"){
 				image = <img height="100" width="100" src="/images/scatteredClouds.png"></img>
@@ -41,7 +44,7 @@ export default class Icon extends React.Component {
 		  
 		  
                 return ( 
-					<div>
+					<div style={pad}>
 						{image}
 					</div>
 					

@@ -95,6 +95,8 @@ export default class HelloMeteor extends React.Component {
 				var currentDay = this.state.day;
 				var currentMonth = this.state.month;
 				
+			
+				
 				
 			/*CHECK TIME SO WE CAN CALCULATE WHICH INDEX IN FORECAST IS TOMORROW AND SO ON*/	  
 			if(time < 3){
@@ -102,139 +104,164 @@ export default class HelloMeteor extends React.Component {
 				  /*PUSH THE DATA TO ARRAY AND THEN SET THE STATE SO WE CAN REFERENCE LATER WHEN LISTING*/
 					arr.push({temp: response.data.list[10].main.temp,
 							 description: response.data.list[10].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[10].dt_txt})
 					arr.push({temp: response.data.list[18].main.temp,
 							  description: response.data.list[18].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[18].dt_txt})
 					arr.push({temp: response.data.list[26].main.temp,
 							  description: response.data.list[26].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[26].dt_txt})
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[33].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				   
 				   } else if(time < 6 && time >= 3){
 					   arr.push({temp: response.data.list[9].main.temp,
 								 description: response.data.list[9].weather[0].description,
-								day: currentDay + 1, month: currentMonth})
+								day: currentDay + 1, month: currentMonth,
+								date: response.data.list[9].dt_txt})
 					   arr.push({temp: response.data.list[17].main.temp,
 								 description: response.data.list[17].weather[0].description,
-								day: currentDay + 2, month: currentMonth})
+								day: currentDay + 2, month: currentMonth,
+								date: response.data.list[17].dt_txt})
 					   arr.push({temp: response.data.list[25].main.temp,
 								 description: response.data.list[25].weather[0].description,
-								day: currentDay + 3, month: currentMonth})
+								day: currentDay + 3, month: currentMonth,
+								date: response.data.list[25].dt_txt})
 					   arr.push({temp: response.data.list[33].main.temp,
 								 description: response.data.list[33].weather[0].description,
-								day: currentDay + 4, month: currentMonth})
+								day: currentDay + 4, month: currentMonth,
+								date: response.data.list[33].dt_txt})
 					   arr.push({temp: response.data.list[36].main.temp,
 								 description: response.data.list[36].weather[0].description,
-								day: currentDay + 5, month: currentMonth})
+								day: currentDay + 5, month: currentMonth,
+								date: response.data.list[36].dt_txt})
 					   this.setState({forecast: arr})
 					   
 				}  else if(time < 9 && time >= 6){
 					arr.push({temp: response.data.list[9].main.temp,
 							  description: response.data.list[9].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[9].dt_txt})
 					arr.push({temp: response.data.list[17].main.temp,
 							  description: response.data.list[17].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[17].dt_txt})
 					arr.push({temp: response.data.list[25].main.temp,
 							  description: response.data.list[25].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[25].dt_txt})
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[33].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 12 && time >= 9){
 					arr.push({temp: response.data.list[8].main.temp,
 							  description: response.data.list[8].weather[0].description,
-							  day: currentDay + 1, month: currentMonth})
+							  day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							  description: response.data.list[16].weather[0].description,
-							  day: currentDay + 2, month: currentMonth})
+							  day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
-							  day: currentDay + 3, month: currentMonth})
+							  day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
-							  day: currentDay + 4, month: currentMonth})
+							  day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[32].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							  day: currentDay + 5, month: currentMonth})
+							  day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 15 && time >= 12){
 					arr.push({temp: response.data.list[8].main.temp,
 							 description: response.data.list[8].weather[0].description,
 							 day: currentDay + 1, month: currentMonth,
-							 min: response.data.list[4].main.temp_min,
-							 max: response.data.list[9].main.temp_max})
+							 date: response.data.list[10].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							 description: response.data.list[16].weather[0].description,
 							 day: currentDay + 2, month: currentMonth,
-							 min: response.data.list[8].main.temp_min,
-							 max: response.data.list[17].main.temp_max})
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							 description: response.data.list[24].weather[0].description,
 							 day: currentDay + 3, month: currentMonth,
-							 min: response.data.list[16].main.temp_min,
-							 max: response.data.list[25].main.temp_max})
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							 description: response.data.list[32].weather[0].description,
 							 day: currentDay + 4, month: currentMonth,
-							 min: response.data.list[16].main.temp_min,
-							 max: response.data.list[33].main.temp_max})
+							 date: response.data.list[32].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							 description: response.data.list[36].weather[0].description,
 							 day: currentDay + 5, month: currentMonth,
-							 min: response.data.list[18].main.temp_min,
-							 max: response.data.list[36].main.temp_max})
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					console.log(this.state.forecast)
 					
 				}  else if(time < 18 && time >= 15){
 					arr.push({temp: response.data.list[8].main.temp,
 							  description: response.data.list[8].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							  description: response.data.list[16].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[32].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 21 && time >= 18){
 					arr.push({temp: response.data.list[6].main.temp,
 							  description: response.data.list[6].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[6].dt_txt})
 					arr.push({temp: response.data.list[14].main.temp,
 							  description: response.data.list[14].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[14].dt_txt})
 					arr.push({temp: response.data.list[22].main.temp,
 							  description: response.data.list[22].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[22].dt_txt})
 					arr.push({temp: response.data.list[30].main.temp,
 							  description: response.data.list[30].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[30].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 				
 				
@@ -242,19 +269,24 @@ export default class HelloMeteor extends React.Component {
 				   } else if (time < 24 && time >= 21) {
 					arr.push({temp: response.data.list[0].main.temp,
 							  description: response.data.list[0].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[0].dt_txt})
 					arr.push({temp: response.data.list[8].main.temp,
 							  description: response.data.list[8].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							  description: response.data.list[16].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[32].dt_txt})
 					this.setState({forecast: arr})
 				}	
 				
@@ -312,129 +344,164 @@ export default class HelloMeteor extends React.Component {
 			if(time < 3){
 					arr.push({temp: response.data.list[10].main.temp,
 							 description: response.data.list[10].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[10].dt_txt})
 					arr.push({temp: response.data.list[18].main.temp,
 							  description: response.data.list[18].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[18].dt_txt})
 					arr.push({temp: response.data.list[26].main.temp,
 							  description: response.data.list[20].weather[0].description,
-							  day: currentDay + 3, month: currentMonth})
+							  day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[20].dt_txt})
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
-							  day: currentDay + 4, month: currentMonth})
+							  day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[33].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				   
 				   } else if(time < 6 && time >= 3){
 					   arr.push({temp: response.data.list[9].main.temp,
 								 description: response.data.list[9].weather[0].description,
-								 day: currentDay + 1, month: currentMonth})
+								 day: currentDay + 1, month: currentMonth,
+								date: response.data.list[9].dt_txt})
 					   arr.push({temp: response.data.list[17].main.temp,
 								 description: response.data.list[17].weather[0].description,
-								 day: currentDay + 2, month: currentMonth})
+								 day: currentDay + 2, month: currentMonth,
+								date: response.data.list[17].dt_txt})
 					   arr.push({temp: response.data.list[25].main.temp,
 								 description: response.data.list[25].weather[0].description,
-								 day: currentDay + 3, month: currentMonth})
+								 day: currentDay + 3, month: currentMonth,
+								date: response.data.list[25].dt_txt})
 					   arr.push({temp: response.data.list[33].main.temp,
 								 description: response.data.list[33].weather[0].description,
-								 day: currentDay + 4, month: currentMonth})
+								 day: currentDay + 4, month: currentMonth,
+								date: response.data.list[33].dt_txt})
 					   arr.push({temp: response.data.list[36].main.temp,
 								 description: response.data.list[36].weather[0].description,
-								 day: currentDay + 5, month: currentMonth})
+								 day: currentDay + 5, month: currentMonth,
+								date: response.data.list[36].dt_txt})
 					   this.setState({forecast: arr})
 					   
 				}  else if(time < 9 && time >= 6){
 					arr.push({temp: response.data.list[9].main.temp,
 							  description: response.data.list[9].weather[0].description,
-							  day: currentDay + 1, month: currentMonth})
+							  day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[9].dt_txt})
 					arr.push({temp: response.data.list[17].main.temp,
 							  description: response.data.list[17].weather[0].description,
-							  day: currentDay + 2, month: currentMonth})
+							  day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[17].dt_txt})
 					arr.push({temp: response.data.list[25].main.temp,
 							  description: response.data.list[25].weather[0].description,
-							  day: currentDay + 3, month: currentMonth})
+							  day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[25].dt_txt})
 					arr.push({temp: response.data.list[33].main.temp,
 							  description: response.data.list[33].weather[0].description,
-							  day: currentDay + 4, month: currentMonth})
+							  day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[33].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							  day: currentDay + 5, month: currentMonth})
+							  day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 12 && time >= 9){
 					arr.push({temp: response.data.list[8].main.temp,
 							  description: response.data.list[8].weather[0].description,
-							  day: currentDay + 1, month: currentMonth})
+							  day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							  description: response.data.list[16].weather[0].description,
-							  day: currentDay + 2, month: currentMonth})
+							  day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
-							  day: currentDay + 3, month: currentMonth})
+							  day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							  description: response.data.list[32].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[32].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							  day: currentDay + 5, month: currentMonth})
+							  day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 15 && time >= 12){
 					arr.push({temp: response.data.list[8].main.temp,
 							 description: response.data.list[8].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							 description: response.data.list[16].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							 description: response.data.list[24].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[32].main.temp,
 							 description: response.data.list[32].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[32].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							 description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 				
 					
 				}  else if(time < 18 && time >= 15){
 					arr.push({temp: response.data.list[7].main.temp,
 							  description: response.data.list[7].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[7].dt_txt})
 					arr.push({temp: response.data.list[15].main.temp,
 							  description: response.data.list[15].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[15].dt_txt})
 					arr.push({temp: response.data.list[23].main.temp,
 							  description: response.data.list[23].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[23].dt_txt})
 					arr.push({temp: response.data.list[31].main.temp,
 							  description: response.data.list[31].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[31].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 					
 				}  else if(time < 21 && time >= 18){
 					arr.push({temp: response.data.list[6].main.temp,
 							  description: response.data.list[6].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[6].dt_txt})
 					arr.push({temp: response.data.list[14].main.temp,
 							  description: response.data.list[14].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[14].dt_txt})
 					arr.push({temp: response.data.list[22].main.temp,
 							  description: response.data.list[22].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[22].dt_txt})
 					arr.push({temp: response.data.list[30].main.temp,
 							  description: response.data.list[30].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[30].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 				
 				
@@ -442,19 +509,24 @@ export default class HelloMeteor extends React.Component {
 				   } else if (time < 24 && time >= 21) {
 					arr.push({temp: response.data.list[0].main.temp,
 							  description: response.data.list[0].weather[0].description,
-							 day: currentDay + 1, month: currentMonth})
+							 day: currentDay + 1, month: currentMonth,
+							 date: response.data.list[0].dt_txt})
 					arr.push({temp: response.data.list[8].main.temp,
 							  description: response.data.list[8].weather[0].description,
-							 day: currentDay + 2, month: currentMonth})
+							 day: currentDay + 2, month: currentMonth,
+							 date: response.data.list[8].dt_txt})
 					arr.push({temp: response.data.list[16].main.temp,
 							  description: response.data.list[16].weather[0].description,
-							 day: currentDay + 3, month: currentMonth})
+							 day: currentDay + 3, month: currentMonth,
+							 date: response.data.list[16].dt_txt})
 					arr.push({temp: response.data.list[24].main.temp,
 							  description: response.data.list[24].weather[0].description,
-							 day: currentDay + 4, month: currentMonth})
+							 day: currentDay + 4, month: currentMonth,
+							 date: response.data.list[24].dt_txt})
 					arr.push({temp: response.data.list[36].main.temp,
 							  description: response.data.list[36].weather[0].description,
-							 day: currentDay + 5, month: currentMonth})
+							 day: currentDay + 5, month: currentMonth,
+							 date: response.data.list[36].dt_txt})
 					this.setState({forecast: arr})
 				}	
 				

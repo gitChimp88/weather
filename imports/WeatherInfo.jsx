@@ -25,15 +25,15 @@ export default class WeatherInfo extends React.Component {
 		  
 		  const inline = {
 			display: "inline-block",
-			marginRight: "40px",
-			marginLeft: "40px",
+			marginRight: "20px",
+			marginLeft: "20px",
 			marginBottom: "40px",
 			backgroundColor: "#165F82",
-		    padding: "5px",
+		    padding: "10px",
 			borderRadius: "10px",
 			color: "#BCD9D9",
 			fontFamily: 'Work Sans, sans-serif',
-			  opacity: "0.9"
+			opacity: "0.9"
 			
 		}
 		  const white = {
@@ -85,8 +85,12 @@ export default class WeatherInfo extends React.Component {
 			
 							
 						{this.props.forecast.map((val, i)=>{
+							var xxx = val.date
+							var date = xxx.split(' ')
+							var day = date[0]
+							var fini = day.split('-').slice(1).reverse().join('/')
 			 
-			  return <div key={i} style={inline}><div><h1 style={white}>{val.day}/{val.month}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
+			  return <div key={i} style={inline}><div><h1 style={white}>{fini}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
 		  })}
 						</div>
 						
@@ -111,8 +115,13 @@ export default class WeatherInfo extends React.Component {
 			
 							
 						{this.props.forecast.map((val, i)=>{
+							
+							var xxx = val.date
+							var date = xxx.split(' ')
+							var day = date[0]
+							var fini = day.split('-').slice(1).reverse().join('/')
 			 
-			  return <div key={i} style={inline}><div><h1 style={white}>{val.day}/{val.month}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
+			  return <div key={i} style={inline}><div><h1 style={white}>{fini}</h1><p>{val.temp} °C</p><p>{val.description}</p><Icon description={val.description}/></div></div>
 		  })}
 						</div>
 						

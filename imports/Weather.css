@@ -51,6 +51,7 @@
 .clear {
 	background: url('https://cdn.suwalls.com/wallpapers/nature/bright-sun-in-the-clear-sky-above-the-mountain-lake-53554-1920x1200.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	
 	
 }
@@ -58,36 +59,43 @@
 .clouds {
 		background: url('/images/cloudImage.jpg') top left no-repeat; 
 	   background-size: cover;
+	background-attachment: fixed;
 }
 
 .rain {
 	background: url('/images/rain.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .thunder {
 	background: url('images/storm.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .snow {
 	background: url('images/snowing.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .mist {
 	background: url('images/mist.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .haze {
 	background: url('images/haze.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .overCast {
 	background: url('images/overcast.jpg') top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #h1temp{

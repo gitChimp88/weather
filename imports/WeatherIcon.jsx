@@ -9,6 +9,9 @@ export default class WeatherIcon extends React.Component {
 	 render(){
 		
 		 /*DISPLAY ICON FOR CURRENT WEATHER*/
+		 const pad = {
+			 padding: "10px"
+		 }
 		 	var description = this.props.description;
 		 	let image;
 		 
@@ -28,7 +31,7 @@ export default class WeatherIcon extends React.Component {
 				image = <img height="200" width="200" src="/images/thunderStorm.png"></img>
 			}  else if(description == "snow" || description == "light snow" || description == "light shower snow"){
 				image = <img height="200" width="200" src="/images/snow.png"></img>
-			}  else if(description == "mist"){
+			}  else if(description == "mist" || description == "smoke"){
 				image = <img height="200" width="200" src="/images/mist.png"></img>
 			}  else if(description == "overcast clouds"){
 				image = <img height="200" width="200" src="/images/scatteredClouds.png"></img>
@@ -38,7 +41,7 @@ export default class WeatherIcon extends React.Component {
 		 	
 		 	
 		 return ( 
-					<div>
+					<div style={pad}>
 						{image}
 					</div>
 					
