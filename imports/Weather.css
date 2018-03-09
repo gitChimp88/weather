@@ -98,6 +98,64 @@
 	background-attachment: fixed;
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+	 .clear {
+	background: url('https://cdn.suwalls.com/wallpapers/nature/bright-sun-in-the-clear-sky-above-the-mountain-lake-53554-1920x1200.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	
+	
+}
+
+.clouds {
+		background: url('/images/cloudImage.jpg') top left no-repeat; 
+	   background-size: cover;
+	background-attachment: scroll;
+}
+
+.rain {
+	background: url('/images/rain.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.thunder {
+	background: url('images/storm.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.snow {
+	background: url('images/snowing.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.mist {
+	background: url('images/mist.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.haze {
+	background: url('images/haze.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.overCast {
+	background: url('images/overcast.jpg') top left no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+}
+
+
 #h1temp{
 	font-size: 50px;
 }
