@@ -2,6 +2,7 @@
 weather project - BCS
 # README 
 
+Working demo - https://weatherapp88.herokuapp.com/
 
 Technologies used - 
 React.js, Meteor, Html, Css, External Apis
